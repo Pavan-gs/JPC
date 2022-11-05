@@ -1,0 +1,202 @@
+Data Science/Analytics/Business Analytics/Data mining/Machine learning
+
+
+1990's --> www era, Personal computers
+
+Amazon, Google, Facebook, Yahoo
+
+Flat files
+-----------
+
+Linear Search
+Redundancy
+Con-current operations are not possible
+
+
+Online Transaction Processing (OLTP)  --> Databases , Oracle [SQL, mysql], SQL server, post-gre, db2, maria db
+
+Hierarchical DB
+Networking DB
+Relational DB [RDBMS]  --> 
+
+ACID complaint
+
+Automicity
+Consistancy
+Isolation
+Durability
+
+index is kept(Key Constraints), Normalisations
+
+OLAP -->   Online Analytics Processing
+
+Data warehouses
+
+Data Science Life cycle
+-------------------------------
+
+Data Engineering  --> Collection, Storage, Processing & management of data  [Excel, RDBMS, DW, Hadoop, Cloud]
+
+Data Analytics --> Analyse & explore the data, maths, stats, domain knowledge [Pandas, R, Excel, SQl]
+
+Data Visualisation (BI) --> Charts, reports, presentations, dashboards [Tableau, Power BI, Qlikview, Lookr, Cognos]
+
+Advanced Analytics --> ML, DL/NN
+
+Solution Development
+
+Deployment --> Web application framework [Flask, Django]
+
+Testing --> Unit test cases, Selenium
+
+Big Data Challenges   
+---------------------------
+
+Volume  --> Cost of storage [RDBMS, License, Costly high end servers] 
+
+Velocity --> Speed of data generation
+
+Variety --> Unstructured data
+
+Hadoop   - --> Open source framework written in Java
+-----------
+
+Hadoop cluster --> Hadoop programs running in multiple machines in a Master and slave architecture
+
+HDFS (Hadoop Distributed File System)  --> Storage Layer 
+Map Reduce  (YARN/Yet Another Resource Negotiator) --> Native Processing Layer --> Parallel processing framework
+
+Tez --> Processing
+Spark --> Cluster computing framework (Processing)
+
+Hive --> Data warehousing solution
+
+
+HDFS
+--------
+Hadoop fs takes the write request from the user
+Splits the data into blocks of a maximum size of 128 mb
+these blocks are further replicated (3 by default)
+
+Name node --> Master --> Decides where the blocks and replications are written, also to keep track of the meta data
+Data nodes --> Slave machines --> Data resides
+
+Secondary Name node --> Manual back up
+
+High availability --> Auto  back-up of the name node
+Federation --> Set up multiple name nodes
+
+MapReduce  (YARN)
+---------------------------
+
+Parallel processing framework
+
+Mapper
+Reducer
+
+/* hi, welcome to the class of python, python is easy and comprehensive, welcome again!!! */
+
+mapper   (Business Logic)
+-----------
+1. Split the data into words
+
+hi,1
+welcome,1
+to,1
+the,1
+class,1
+python,1
+python,1
+easy,1
+comprehensive,1
+welcome,1
+again,1
+
+(hi,1) (welcome, 1,1) (python,1,1) (class,1) (again,1)
+
+Reducer   --> Aggregation logic
+-----------
+
+(hi,1)
+(welcome,2)
+(python,2)
+(again,1)
+(class,1)
+
+1. Find out the number of people whose salary > $10,000  --> is reducer required?
+
+2. Print the name of people whose salary > $10,000  --> is reducer required?
+
+
+100 gb data
+-----------------
+
+ 30 gb --> Poojitha    --> 500 emp
+
+ 30 gb --> Hima --> 465
+
+ 20 --> Bhavana --> 700
+ 
+ 20---> Zehra --> 300 
+
+Reducer
+
+500+465+700+300 --> aggregated result
+
+Hadoop streaming --> Utility that lets you run script of other languages
+ 
+Hive
+------
+
+Data warehouse solution
+HQL --> SQL
+Internal tables --> Data from HDFS is moved into Hive/ warehouse location (data is lost if the table is deleted/data isn't available for any other hadoop programs)
+
+Managed tables --> 
+
+
+Spark
+--------
+Pyspark
+Dataframes
+Spark Streaming & Kafka
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
